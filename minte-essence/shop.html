@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop – Minté Essence</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Minté Essence</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="about.html">Over ons</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="shop-container">
+    <section class="product-grid" id="products"></section>
+    <aside class="cart">
+      <h3>Winkelwagen</h3>
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        <span>Totaal:</span>
+        <strong id="total">€0,00</strong>
+      </div>
+      <button onclick="checkout()" class="btn-primary full">Afrekenen</button>
+    </aside>
+  </main>
+
+  <footer>© 2025 Minté Essence – All rights reserved.</footer>
+</body>
+</html>

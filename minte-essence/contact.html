@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Minté Essence</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Minté Essence</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">Over ons</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h1>Neem contact met ons op</h1>
+    <form onsubmit="alert('Bedankt voor je bericht!'); return false;">
+      <input type="text" placeholder="Naam" required />
+      <input type="email" placeholder="E-mail" required />
+      <textarea placeholder="Bericht" rows="5" required></textarea>
+      <button type="submit" class="btn-primary">Versturen</button>
+    </form>
+  </section>
+
+  <footer>© 2025 Minté Essence – All rights reserved.</footer>
+</body>
+</html>
