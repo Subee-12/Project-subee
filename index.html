@@ -661,6 +661,86 @@
             color: var(--cream-secondary);
             transform: translateY(-2px);
         }
+
+        /* About Section */
+        .about {
+            padding: 5rem 2rem;
+            background: linear-gradient(180deg, var(--white) 0%, var(--cream-secondary) 100%);
+        }
+        
+        .about-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+        
+        .about-text p {
+            color: #555;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        .about-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+        
+        .about-pill {
+            background: var(--mint-primary);
+            color: var(--dark-text);
+            padding: 0.6rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .about-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+        
+        .about-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-taupe);
+            letter-spacing: 0.5px;
+        }
+        
+        .about-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 0.75rem;
+        }
+        
+        .about-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            color: #444;
+        }
+        
+        .about-list li::before {
+            content: "•";
+            color: var(--accent-taupe);
+            font-weight: bold;
+            line-height: 1.2;
+        }
         
         /* Footer */
         .footer {
@@ -953,6 +1033,32 @@
                     <input type="text" id="userInput" placeholder="Bijv: Ik zoek een parfum voor heren voor kantoor...">
                     <button onclick="sendMessage()">Vraag Advies</button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Over ons</h2>
+                <p>Wij zijn een multidisciplinair team dat digitale producten en maatwerksoftware levert. We combineren strategie, design en engineering om oplossingen te maken die aantoonbaar waarde toevoegen aan jouw organisatie.</p>
+                <p>We werken pragmatisch, communiceren helder en leveren iteratief zodat je snel resultaat ziet en feedback direct kunt verwerken. Onze focus ligt op duurzame samenwerking en een stabiele basis waar je op kunt doorgroeien.</p>
+                <div class="about-pills">
+                    <span class="about-pill">Strategie</span>
+                    <span class="about-pill">Design</span>
+                    <span class="about-pill">Engineering</span>
+                    <span class="about-pill">AI & automatisering</span>
+                </div>
+            </div>
+            <div class="about-card">
+                <h3>Onze werkwijze</h3>
+                <ul class="about-list">
+                    <li>Heldere doelen en korte iteraties voor merkbaar resultaat.</li>
+                    <li>Co-creatie met stakeholders; feedback direct verwerken.</li>
+                    <li>Schaalbare architectuur en een stabiele basis voor groei.</li>
+                    <li>Meetbare impact: we sturen op KPI’s en klanttevredenheid.</li>
+                </ul>
             </div>
         </div>
     </section>
